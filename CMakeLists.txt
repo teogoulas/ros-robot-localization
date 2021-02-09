@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-project(robot_localization_demo)
+project(ros-robot-localization)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -113,7 +113,7 @@ include_directories(${Boost_INCLUDE_DIRS})
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-#  LIBRARIES robot_localization_demo
+#  LIBRARIES ros_robot_localization
   CATKIN_DEPENDS roscpp tf2 robot_localization
 #  DEPENDS system_lib
 )
@@ -131,7 +131,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/robot_localization_demo.cpp
+#   src/${PROJECT_NAME}/ros_robot_localization.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -142,7 +142,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/robot_localization_demo_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/ros-robot-localization_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -226,7 +226,7 @@ target_link_libraries(transformation_visualization_node
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_robot_localization_demo.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_ros-robot-localization.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

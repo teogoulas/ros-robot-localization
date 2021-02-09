@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>robot_localization_demo</name>
-  <version>0.0.0</version>
-  <description>Robot localization demo</description>
+  <name>ros-robot-localization</name>
+  <version>0.0.1</version>
+  <description>ROS Robot localization</description>
 
-  <maintainer email="maarten@kapernikov.com">Maarten De Munck</maintainer>
+  <maintainer email="teogoulas@gmail.com">Thodoris Goulas</maintainer>
 
   <license>Copyright (c) 2018 Kapernikov CVBA All Rights Reserved</license>
 
-  <!-- <url type="website">http://wiki.ros.org/robot_localization_demo</url> -->
+  <!-- <url type="website">http://wiki.ros.org/ros-robot-localization</url> -->
 
-  <author email="maarten@kapernikov.com">Maarten De Munck</author>
+  <author email="teogoulas@gmail.com">Thodoris Goulas</author>
 
   <!-- The *depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->

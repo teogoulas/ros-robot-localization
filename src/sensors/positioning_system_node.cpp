@@ -1,6 +1,6 @@
 #include <boost/program_options.hpp>
 #include <ros/ros.h>
-#include <robot_localization_demo/positioning_system.hpp>
+#include <ros_robot_localization/positioning_system.hpp>
 
 
 int main(int argc, char ** argv) {
@@ -37,7 +37,7 @@ int main(int argc, char ** argv) {
   ros::init(argc, argv, "turtle_positioning_system");
   ros::NodeHandle node_handle;
 
-  robot_localization_demo::TurtlePositioningSystem turtle_positioning_system{node_handle, frequency,
+  ros_robot_localization::TurtlePositioningSystem turtle_positioning_system{node_handle, frequency,
     error_x_systematic, error_x_random, error_y_systematic, error_y_random,
     error_yaw_systematic, error_yaw_random, (variables_map.count("visualize")? true: false)};
   turtle_positioning_system.spin();

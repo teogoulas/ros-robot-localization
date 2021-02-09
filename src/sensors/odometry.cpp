@@ -3,10 +3,10 @@
 #include <turtlesim/Spawn.h>
 #include <turtlesim/SetPen.h>
 #include <turtlesim/TeleportRelative.h>
-#include <robot_localization_demo/odometry.hpp>
+#include <ros_robot_localization/odometry.hpp>
 
 
-namespace robot_localization_demo {
+namespace ros_robot_localization {
 
   TurtleOdometry::TurtleOdometry(ros::NodeHandle node_handle, double frequency,
       double error_vx_systematic, double error_vx_random, double error_wz_systematic, double error_wz_random, bool visualize):

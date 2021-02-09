@@ -1,11 +1,11 @@
-#ifndef __robot_localization_demo__odometry__
-#define __robot_localization_demo__odometry__
+#ifndef __ros_robot_localization__odometry__
+#define __ros_robot_localization__odometry__
 
 #include <random>
 #include <ros/ros.h>
 #include <turtlesim/Pose.h>
 
-namespace robot_localization_demo {
+namespace ros_robot_localization {
 
   class TurtleOdometry {
     public:

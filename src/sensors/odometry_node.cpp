@@ -1,6 +1,6 @@
 #include <boost/program_options.hpp>
 #include <ros/ros.h>
-#include <robot_localization_demo/odometry.hpp>
+#include <ros_robot_localization/odometry.hpp>
 
 
 int main(int argc, char ** argv) {
@@ -33,7 +33,7 @@ int main(int argc, char ** argv) {
   ros::init(argc, argv, "turtle_odometry");
   ros::NodeHandle node_handle;
 
-  robot_localization_demo::TurtleOdometry turtle_odometry{node_handle, frequency,
+  ros_robot_localization::TurtleOdometry turtle_odometry{node_handle, frequency,
       error_vx_systematic, error_vx_random, error_wz_systematic, error_wz_random,
       (variables_map.count("visualize")? true: false)};
   turtle_odometry.spin();

@@ -3,10 +3,10 @@
 #include <turtlesim/Spawn.h>
 #include <turtlesim/SetPen.h>
 #include <turtlesim/TeleportAbsolute.h>
-#include <robot_localization_demo/positioning_system.hpp>
+#include <ros_robot_localization/positioning_system.hpp>
 
 
-namespace robot_localization_demo {
+namespace ros_robot_localization {
 
   TurtlePositioningSystem::TurtlePositioningSystem(ros::NodeHandle node_handle, double frequency,
       double error_x_systematic, double error_x_random, double error_y_systematic, double error_y_random,

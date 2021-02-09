@@ -1,11 +1,11 @@
-#ifndef __robot_localization_demo__positioning_system__
-#define __robot_localization_demo__positioning_system__
+#ifndef __ros_robot_localization__positioning_system__
+#define __ros_robot_localization__positioning_system__
 
 #include <random>
 #include <ros/ros.h>
 #include <turtlesim/Pose.h>
 
-namespace robot_localization_demo {
+namespace ros_robot_localization {
 
   class TurtlePositioningSystem {
     public:
