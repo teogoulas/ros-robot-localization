@@ -3,10 +3,10 @@
   <!-- visualization node to show the real turtle, the measurements and the estimated position -->
   <node pkg="turtlesim" type="turtlesim_node" name="turtle1" output="screen"/>
   <!-- keyboard control for the real turtle -->
-  <node pkg="rosbag" type="play" name="player" output="screen" args="--clock --hz=5 /home/ros-industrial/catkin_ws/src/ros-robot-localization/data/log_2021-02-25-15-38-30.bag"/>
+  <node pkg="rosbag" type="play" name="player" output="screen" args="/home/ros-industrial/catkin_ws/src/ros-robot-localization/data/bag_files/log_2021-02-25-15-38-30.bag --topics /turtle1/pose /turtle1/cmd_vel /turtle1/color_sensor"/>
   <!-- <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen" /> -->
   
-  <node pkg="rosbag" type="record" name="rosbag_distance" args="record -o /home/ros-industrial/catkin_ws/src/ros-robot-localization/data/ros_robot_localization_log -a"/>
+  <node pkg="rosbag" type="record" name="rosbag_distance" args="record --duration=200 -o /home/ros-industrial/catkin_ws/src/ros-robot-localization/data/bag_files/ros_robot_localization_log -a"/>
 
   <!-- 'turtle positioning system', transforming the position of the real turtle to a noisy measurement at a given frequency -->
   <node pkg="ros-robot-localization" type="positioning_system_node" name="turtle1_positioning_system_node"
